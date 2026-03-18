@@ -1,0 +1,8 @@
+#error "Please select first the target STM32F4xx device used in your application (in stm32f4xx.h file)"
+Solution: 
+Define in your project settings (recommended)
+1. Right-click project → Properties
+2. Go to C/C++ Build → Settings → MCU GCC Compiler → Preprocessor (or C/C++ General → Paths and Symbols → Symbols)
+3. Add Preprocessor Macro:
+     STM32F446xx
+This tells CMSIS you’re targeting STM32F446 (Nucleo-F446RE)
